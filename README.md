@@ -11,7 +11,7 @@
   * Learning Unity Shader
 
 * **Katou Megumi** is my waifu
-* Still single but crushing on a wonderful girl
+* Still single
 
 * Reasons for **John** as my English name
   * John is similar to the pronunciation of the second character in my name
