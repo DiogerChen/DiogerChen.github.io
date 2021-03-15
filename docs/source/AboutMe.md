@@ -10,6 +10,7 @@
 
 * Want to be a **Technical Artist**
   * Strugling in Computer Graphics
+  * Learning DirectX
   * Learning Unity Shader
 
 * **Katou Megumi** is my waifu
@@ -19,5 +20,5 @@
   * John is similar to the pronunciation of the second character in my Chinese name
   * I love **Keanu Reeves**, he played **John Wick** in *John Wick*, and **Johnny Silverhand** in *Cyberpunk 2077*
   * I love **Arthur Morgan** in *Red Dead Redemption II*, **John Marston** got Arthur's hat, and Arthur's will that leaving away from the life with blood
-  
-Special thanks to [Inger Chao](https://www.ingernotes.cn/about/) for her guidance on building this blog site.
+
+Special thanks to [Inger Chao](https://www.ingernotes.cn/about/) for her guidance on building an old version of this blog site.
