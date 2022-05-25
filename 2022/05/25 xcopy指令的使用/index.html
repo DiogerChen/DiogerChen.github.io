@@ -13,7 +13,7 @@
     
     
       
-        <title>mkdocs配置详情 - John Chen's Site</title>
+        <title>25th. xcopy指令的使用 - John Chen's Site</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs" class="md-skip">
+        <a href="#25th-xcopy" class="md-skip">
           跳转至
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              mkdocs配置详情
+              25th. xcopy指令的使用
             
           </span>
         </div>
@@ -252,7 +252,7 @@
   
     <li class="md-nav__item">
       <a href="../24%20mkdocs%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85/" class="md-nav__link">
-        mkdocs配置详情
+        24th. mkdocs配置详情
       </a>
     </li>
   
@@ -275,7 +275,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        mkdocs配置详情
+        25th. xcopy指令的使用
       </a>
       
     </li>
@@ -328,20 +328,34 @@
                 
 
 
-<h1 id="mkdocs">mkdocs配置详情</h1>
+<h1 id="25th-xcopy">25th. xcopy指令的使用</h1>
 <p><code>2022-05-25</code></p>
 <p>因为我那将近25小时的<a href="https://store.steampowered.com/app/1366540">戴森球计划</a>存档莫名奇妙被覆盖然后消失, 我决定准备一个脚本, 在每次游戏结束之后手动运行一次这个脚本, 复制存档土法备份.</p>
 <p><code>Windows</code> 系统自带了 <code>xcopy</code> 指令, 用于复制文件. <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy">官方文档</a>有对变量的说明, 我又找了<a href="https://blog.csdn.net/smartsmile2012/article/details/78123534">一篇博客</a>补充添加了一些指令.</p>
 <p>我的指令如下:</p>
 <div class="highlight"><pre><span></span><code>xcopy SRC_PATH DST_PATH /W /I /s /e /y /j
 </code></pre></div>
-<p>对所用到的变量的解释:
- - <code>/W</code> 会在运行前提示按下任意键, 之后再开始复制.
- - <code>/I</code> 如果目标路径不存在, 原路径下又有多个文件, 则默认目标路径为一个<strong>目录</strong>而非一个文件.
- - <code>/s</code> 将会复制所有子目录, 除非子目录为空.
- - <code>/e</code> 将会复制所有子目录, 包括空的子目录, 必须在前添加 <code>/s</code> 以覆盖其排除逻辑.
- - <code>/y</code> 将会强制覆盖目标目录中已存在的文件, 不会询问.
- - <code>/j</code> 不使用缓存机制的复制, 如果文件较大建议使用, <code>戴森球计划</code>的存档在后期还是非常大的.</p>
+<p>对所用到的变量的解释:</p>
+<ul>
+<li>
+<p><code>/W</code> 会在运行前提示按下任意键, 之后再开始复制.</p>
+</li>
+<li>
+<p><code>/I</code> 如果目标路径不存在, 原路径下又有多个文件, 则默认目标路径为一个<strong>目录</strong>而非一个文件.</p>
+</li>
+<li>
+<p><code>/s</code> 将会复制所有子目录, 除非子目录为空.</p>
+</li>
+<li>
+<p><code>/e</code> 将会复制所有子目录, 包括空的子目录, 必须在前添加 <code>/s</code> 以覆盖其排除逻辑.</p>
+</li>
+<li>
+<p><code>/y</code> 将会强制覆盖目标目录中已存在的文件, 不会询问.</p>
+</li>
+<li>
+<p><code>/j</code> 不使用缓存机制的复制, 如果文件较大建议使用, <code>戴森球计划</code>的存档在后期还是非常大的.</p>
+</li>
+</ul>
 
               
             </article>
@@ -360,7 +374,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚">
       
         
-        <a href="../24%20mkdocs%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85/" class="md-footer__link md-footer__link--prev" aria-label="上一页: mkdocs配置详情" rel="prev">
+        <a href="../24%20mkdocs%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 24th. mkdocs配置详情" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -369,7 +383,7 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              mkdocs配置详情
+              24th. mkdocs配置详情
             </div>
           </div>
         </a>
