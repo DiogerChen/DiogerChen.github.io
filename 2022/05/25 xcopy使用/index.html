@@ -249,6 +249,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../24%20mkdocs%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85/" class="md-nav__link">
+        mkdocs配置详情
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -260,74 +274,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          mkdocs配置详情
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         mkdocs配置详情
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    配置
-  </a>
-  
-    <nav class="md-nav" aria-label="配置">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    中文搜索
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    视频支持
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    公式支持
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    配置分享
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -367,55 +316,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    配置
-  </a>
-  
-    <nav class="md-nav" aria-label="配置">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    中文搜索
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    视频支持
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    公式支持
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    配置分享
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -430,59 +330,18 @@
 
 <h1 id="mkdocs">mkdocs配置详情</h1>
 <p><code>2022-05-25</code></p>
-<p>现在有太多的工具能帮你生成静态网页. 这里我用的是 <a href="https://www.mkdocs.org/"><code>mkdocs</code></a>, 它使用 Python 运行服务/生成静态网页, <a href="https://www.mkdocs.org/getting-started/">官方在这里</a>有说明如何使用并配置 <code>mkdocs</code>. </p>
-<p>建议使用 <code>Python3</code>.</p>
-<p><div class="highlight"><pre><span></span><code>pip3 install mkdocs mkdocs-video mkdocs-material jieba
+<p>因为我那将近25小时的<a href="https://store.steampowered.com/app/1366540">戴森球计划</a>存档莫名奇妙被覆盖然后消失, 我决定准备一个脚本, 在每次游戏结束之后手动运行一次这个脚本, 复制存档土法备份.</p>
+<p><code>Windows</code> 系统自带了 <code>xcopy</code> 指令, 用于复制文件. <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy">官方文档</a>有对变量的说明, 我又找了<a href="https://blog.csdn.net/smartsmile2012/article/details/78123534">一篇博客</a>补充添加了一些指令.</p>
+<p>我的指令如下:</p>
+<div class="highlight"><pre><span></span><code>xcopy SRC_PATH DST_PATH /W /I /s /e /y /j
 </code></pre></div>
-初始的 <code>mkdocs</code> 并不够好看好用, 但好在很多人为这个模块提供了诸多模块和主题.这里我们使用的主题是 <a href="https://squidfunk.github.io/mkdocs-material/"><code>mkdocs-material</code></a> .<br></br></p>
-<h2 id="_1">配置</h2>
-<p>在我的站点主要内容将是<strong>中文</strong>, 以及可能出现的<strong>视频</strong>和<strong>公式</strong>, 所以我们需要为这些特殊的东西添加一些额外的配置, 以让其正常显示.</p>
-<h3 id="_2">中文搜索</h3>
-<p>非常幸运的是, 在我着手搭建站点前半个月, <code>mkdocs-material</code> 主题刚刚实现了基于 <code>jieba</code> 模块的<a href="https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/">中文搜索支持</a>. 如果不按照链接进行配置的话, 搜索功能就只支持英文, 中文是搜不出任何内容的. 虽然有些时候效果不好, 但起码能用. 这也是我选择使用这个主题的主要原因.</p>
-<h3 id="_3">视频支持</h3>
-<p><a href="https://pypi.org/project/mkdocs-video/"><code>mkdocs-video</code></a> 模块支持文章中插入视频并播放, 只需配置里写好设置, 并按照如下格式插入Markdown中：
-<div class="highlight"><pre><span></span><code>![type:video](THE_VIDEO_PATH_HERE)
-</code></pre></div></p>
-<h3 id="_4">公式支持</h3>
-<p>公式显示需要引入额外的 <a href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"><code>JavaScript 文件</code></a>. 具体配置方法见下.</p>
-<h3 id="_5">配置分享</h3>
-<p>以下是个人站点 <code>mkdocs.yml</code> 的部分配置：
-<div class="highlight"><pre><span></span><code>theme:
-  name: material
-  language: zh
-  palette:
-    primary: green
-  features:
-    - navigation.expand    # 左侧导航栏自动展开 (不设置的话需要手动点开)
-    # - toc.integrate        # TOC集成到左侧导航栏中, 不设置的话右侧将单独开一个TOC的导航栏
-    - navigation.top       # 回到页面顶部
-    - search.suggest       # 搜索建议
-    - search.highlight     # 搜索结果高亮显示
-
-plugins:
-  - search:
-      separator: &#39;[\s\u200b\-\.]&#39;
-  - mkdocs-video:
-      is_video: True
-
-markdown_extensions:
-  # 支持显示 Checklist ( - [ ] 和 - [x] )
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  # - markdown_checklist.extension  # 显示有问题, 弃用
-  - markdown.extensions.tables
-  - pymdownx.magiclink
-  - pymdownx.betterem
-  - pymdownx.tilde
-  - pymdownx.emoji
-  - pymdownx.superfences
-
-extra_javascript:
-    # 支持公式显示
-    - &#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML&#39;
-</code></pre></div>
-此外, 还可以修改图标, 添加 <code>.css</code> 和 <code>.js</code> 来实现更独特的网页效果, 因为搭建站点时没有修改这些内容, 在此不做介绍.</p>
-<p>说实话, 配置完这些我理解为什么 <code>Typora</code> 要收费了, 因为这些看似不起眼的地方为了能让用户傻瓜式的使用, 都是需要花时间调配的.</p>
+<p>对所用到的变量的解释:
+ - <code>/W</code> 会在运行前提示按下任意键, 之后再开始复制.
+ - <code>/I</code> 如果目标路径不存在, 原路径下又有多个文件, 则默认目标路径为一个<strong>目录</strong>而非一个文件.
+ - <code>/s</code> 将会复制所有子目录, 除非子目录为空.
+ - <code>/e</code> 将会复制所有子目录, 包括空的子目录, 必须在前添加 <code>/s</code> 以覆盖其排除逻辑.
+ - <code>/y</code> 将会强制覆盖目标目录中已存在的文件, 不会询问.
+ - <code>/j</code> 不使用缓存机制的复制, 如果文件较大建议使用, <code>戴森球计划</code>的存档在后期还是非常大的.</p>
 
               
             </article>
@@ -501,7 +360,7 @@ extra_javascript:
     <nav class="md-footer__inner md-grid" aria-label="页脚">
       
         
-        <a href="../../.." class="md-footer__link md-footer__link--prev" aria-label="上一页: About me" rel="prev">
+        <a href="../24%20mkdocs%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%83%85/" class="md-footer__link md-footer__link--prev" aria-label="上一页: mkdocs配置详情" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -510,7 +369,7 @@ extra_javascript:
               <span class="md-footer__direction">
                 上一页
               </span>
-              About me
+              mkdocs配置详情
             </div>
           </div>
         </a>
