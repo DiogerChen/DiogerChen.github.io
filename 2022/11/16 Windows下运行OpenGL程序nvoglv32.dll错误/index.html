@@ -13,7 +13,7 @@
     
     
       
-        <title>2022-06-01 Python 变量函数调用便捷写法 - John Chen's Site</title>
+        <title>2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决 - John Chen's Site</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2022-06-01-python" class="md-skip">
+        <a href="#2022-11-16-windows-opengl-nvoglv32dll" class="md-skip">
           跳转至
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2022-06-01 Python 变量函数调用便捷写法
+              2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决
             
           </span>
         </div>
@@ -282,14 +282,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" data-md-state="indeterminate" type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -310,52 +308,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          2022-06-01 Python 变量函数调用便捷写法
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../06/01%20Python%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B0%E5%86%99%E6%B3%95/" class="md-nav__link">
         2022-06-01 Python 变量函数调用便捷写法
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#20221115" class="md-nav__link">
-    2022.11.15 更新
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -372,12 +329,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" data-md-state="indeterminate" type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
       
       
       
@@ -398,11 +357,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../11/16%20Windows%E4%B8%8B%E8%BF%90%E8%A1%8COpenGL%E7%A8%8B%E5%BA%8Fnvoglv32.dll%E9%94%99%E8%AF%AF/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决
       </a>
+      
     </li>
   
 
@@ -441,21 +410,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#20221115" class="md-nav__link">
-    2022.11.15 更新
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -468,25 +422,10 @@
                 
 
 
-<h1 id="2022-06-01-python">2022-06-01 Python 变量函数调用便捷写法</h1>
-<p>这种写法在 <code>Python 2</code> 和 <code>Python 3</code> 中都适用。</p>
-<p>当你写一个函数，包括 <code>callback</code> 时，一般会这样写：</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="c1"># ...</span>
-    <span class="k">if</span> <span class="n">callback</span><span class="p">:</span>
-        <span class="n">callback</span><span class="p">()</span>
-</code></pre></div>
-<p>某个变量指向某个 <code>函数</code> 或者 <code>None</code>，判断是否为 <code>None</code>，否则运行函数。这种写法十分常见。</p>
-<p>有个更加简洁的写法，可以直接这样写：</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="c1"># ...</span>
-    <span class="n">callback</span> <span class="ow">and</span> <span class="n">callback</span><span class="p">()</span>
-</code></pre></div>
-<p>这样写可以运行的原理比较简单，就像在前面加个 <code>if</code> 一样，判断语句会从左到右顺序执行，当变量为 <code>None</code> 或者 <code>False</code> 时，<code>and</code> 就不会继续执行下去，而是直接返回 <code>False</code>。</p>
-<p>所以当 <code>callback</code> 为 <code>None</code> 时，这行代码其实已经执行结束了，根本轮不到 <code>callback()</code> 然后抛 <code>TypeError: 'NoneType' object is not callable</code> 的异常了。</p>
-<h2 id="20221115">2022.11.15 更新</h2>
-<p><code>callback and callback()</code> 的写法看起来很酷，但遇到 <code>callback</code> 非 <code>None</code>，也并非是函数的情况时，就还是会出现运行的问题。</p>
-<p>实际上最上面提到的写法也不OK，最稳妥的写法就应该是 <code>callable(callback) and callback()</code>。</p>
+<h1 id="2022-11-16-windows-opengl-nvoglv32dll">2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决</h1>
+<p>在运行程序时遇到 <code>nvoglv32.dll</code> 的报错：无法读取某个地址。看文件名，报错应该是来自N卡底层驱动相关的库。</p>
+<p>参考StackOverflow的<a href="https://stackoverflow.com/questions/24539951/opengl-nvoglv32-dll-error">这个问题</a>，大概意思是要确保在绘制之前，向OpenGL告知<strong>正确</strong>的缓存指针/缓存大小。</p>
+<p>之后检查发现，确实是自己在 <code>glBufferData()</code> 中的缓存大小写错，数值比实际缓存大小要大得多，于是出现了数组越界，无法读取的问题。</p>
 
               
             </article>
@@ -505,7 +444,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚">
       
         
-        <a href="../../05/25%20xcopy%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 2022-05-25 xcopy 指令的使用" rel="prev">
+        <a href="../../06/01%20Python%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B0%E5%86%99%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 2022-06-01 Python 变量函数调用便捷写法" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -514,26 +453,11 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              2022-05-25 xcopy 指令的使用
+              2022-06-01 Python 变量函数调用便捷写法
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../../11/16%20Windows%E4%B8%8B%E8%BF%90%E8%A1%8COpenGL%E7%A8%8B%E5%BA%8Fnvoglv32.dll%E9%94%99%E8%AF%AF/" class="md-footer__link md-footer__link--next" aria-label="下一页: 2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                下一页
-              </span>
-              2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   

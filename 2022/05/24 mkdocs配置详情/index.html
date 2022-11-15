@@ -13,7 +13,7 @@
     
     
       
-        <title>24th. mkdocs配置详情 - John Chen's Site</title>
+        <title>2022-05-24 mkdocs 配置详情 - John Chen's Site</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#24th-mkdocs" class="md-skip">
+        <a href="#2022-05-24-mkdocs" class="md-skip">
           跳转至
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              24th. mkdocs配置详情
+              2022-05-24 mkdocs 配置详情
             
           </span>
         </div>
@@ -261,12 +261,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          24th. mkdocs配置详情
+          2022-05-24 mkdocs 配置详情
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        24th. mkdocs配置详情
+        2022-05-24 mkdocs 配置详情
       </a>
       
         
@@ -341,7 +341,7 @@
   
     <li class="md-nav__item">
       <a href="../25%20xcopy%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-nav__link">
-        25th. xcopy指令的使用
+        2022-05-25 xcopy 指令的使用
       </a>
     </li>
   
@@ -388,7 +388,54 @@
   
     <li class="md-nav__item">
       <a href="../../06/01%20Python%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B0%E5%86%99%E6%B3%95/" class="md-nav__link">
-        01st. Python变量函数调用新写法
+        2022-06-01 Python 变量函数调用便捷写法
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" data-md-state="indeterminate" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          11
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="11" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          11
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11/16%20Windows%E4%B8%8B%E8%BF%90%E8%A1%8COpenGL%E7%A8%8B%E5%BA%8Fnvoglv32.dll%E9%94%99%E8%AF%AF/" class="md-nav__link">
+        2022-11-16 Windows 下运行 OpenGL 程序 nvoglv32.dll 报错解决
       </a>
     </li>
   
@@ -489,23 +536,22 @@
                 
 
 
-<h1 id="24th-mkdocs">24th. mkdocs配置详情</h1>
-<p><code>2022-05-24</code></p>
-<p>现在有太多的工具能帮你生成静态网页. 这里我用的是 <a href="https://www.mkdocs.org/"><code>mkdocs</code></a>, 它使用 Python 运行服务/生成静态网页, <a href="https://www.mkdocs.org/getting-started/">官方在这里</a>有说明如何使用并配置 <code>mkdocs</code>. </p>
-<p>建议使用 <code>Python3</code>.</p>
+<h1 id="2022-05-24-mkdocs">2022-05-24 mkdocs 配置详情</h1>
+<p>现在有太多的工具能帮你生成静态网页。这里我用的是 <a href="https://www.mkdocs.org/"><code>mkdocs</code></a>，它使用 Python 运行服务/生成静态网页，<a href="https://www.mkdocs.org/getting-started/">官方在这里</a>有说明如何使用并配置 <code>mkdocs</code>。</p>
+<p>建议使用 <code>Python3</code>。</p>
 <p><div class="highlight"><pre><span></span><code>pip3 install mkdocs mkdocs-video mkdocs-material jieba
 </code></pre></div>
-初始的 <code>mkdocs</code> 并不够好看好用, 但好在很多人为这个模块提供了诸多模块和主题.这里我们使用的主题是 <a href="https://squidfunk.github.io/mkdocs-material/"><code>mkdocs-material</code></a> .<br></br></p>
+初始的 <code>mkdocs</code> 并不够好看好用，但好在很多人为这个模块提供了诸多模块和主题.这里我们使用的主题是 <a href="https://squidfunk.github.io/mkdocs-material/"><code>mkdocs-material</code></a> .<br></br></p>
 <h2 id="_1">配置</h2>
-<p>在我的站点主要内容将是<strong>中文</strong>, 以及可能出现的<strong>视频</strong>和<strong>公式</strong>, 所以我们需要为这些特殊的东西添加一些额外的配置, 以让其正常显示.</p>
+<p>在我的站点主要内容将是<strong>中文</strong>，以及可能出现的<strong>视频</strong>和<strong>公式</strong>，所以我们需要为这些特殊的东西添加一些额外的配置，以让其正常显示。</p>
 <h3 id="_2">中文搜索</h3>
-<p>非常幸运的是, 在我着手搭建站点前半个月, <code>mkdocs-material</code> 主题刚刚实现了基于 <code>jieba</code> 模块的<a href="https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/">中文搜索支持</a>. 如果不按照链接进行配置的话, 搜索功能就只支持英文, 中文是搜不出任何内容的. 虽然有些时候效果不好, 但起码能用. 这也是我选择使用这个主题的主要原因.</p>
+<p>非常幸运的是，在我着手搭建站点前半个月，<code>mkdocs-material</code> 主题刚刚实现了基于 <code>jieba</code> 模块的<a href="https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/">中文搜索支持</a>。如果不按照链接进行配置的话，搜索功能就只支持英文，中文是搜不出任何内容的。虽然有些时候效果不好，但起码能用。这也是我选择使用这个主题的主要原因。</p>
 <h3 id="_3">视频支持</h3>
-<p><a href="https://pypi.org/project/mkdocs-video/"><code>mkdocs-video</code></a> 模块支持文章中插入视频并播放, 只需配置里写好设置, 并按照如下格式插入Markdown中：
+<p><a href="https://pypi.org/project/mkdocs-video/"><code>mkdocs-video</code></a> 模块支持文章中插入视频并播放，只需配置里写好设置，并按照如下格式插入Markdown中：</p>
 <div class="highlight"><pre><span></span><code>![type:video](THE_VIDEO_PATH_HERE)
-</code></pre></div></p>
+</code></pre></div>
 <h3 id="_4">公式支持</h3>
-<p>公式显示需要引入额外的 <a href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"><code>JavaScript 文件</code></a>. 具体配置方法见下.</p>
+<p>公式显示需要引入额外的 <a href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"><code>JavaScript文件</code></a>。具体配置方法见下。</p>
 <h3 id="_5">配置分享</h3>
 <p>以下是个人站点 <code>mkdocs.yml</code> 的部分配置：
 <div class="highlight"><pre><span></span><code>theme:
@@ -515,7 +561,7 @@
     primary: green
   features:
     - navigation.expand    # 左侧导航栏自动展开 (不设置的话需要手动点开)
-    # - toc.integrate        # TOC集成到左侧导航栏中, 不设置的话右侧将单独开一个TOC的导航栏
+    # - toc.integrate        # TOC集成到左侧导航栏中，不设置的话右侧将单独开一个TOC的导航栏
     - navigation.top       # 回到页面顶部
     - search.suggest       # 搜索建议
     - search.highlight     # 搜索结果高亮显示
@@ -530,7 +576,7 @@ markdown_extensions:
   # 支持显示 Checklist ( - [ ] 和 - [x] )
   - pymdownx.tasklist:
       custom_checkbox: true
-  # - markdown_checklist.extension  # 显示有问题, 弃用
+  # - markdown_checklist.extension  # 显示有问题，弃用
   - markdown.extensions.tables
   - pymdownx.magiclink
   - pymdownx.betterem
@@ -542,8 +588,8 @@ extra_javascript:
     # 支持公式显示
     - &#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML&#39;
 </code></pre></div>
-此外, 还可以修改图标, 添加 <code>.css</code> 和 <code>.js</code> 来实现更独特的网页效果, 因为搭建站点时没有修改这些内容, 在此不做介绍.</p>
-<p>说实话, 配置完这些我理解为什么 <code>Typora</code> 要收费了, 因为这些看似不起眼的地方为了能让用户傻瓜式的使用, 都是需要花时间调配的.</p>
+此外还可以修改图标，添加 <code>.css</code> 和 <code>.js</code> 来实现更独特的网页效果，因为搭建站点时没有修改这些内容，在此不做介绍。</p>
+<p>说实话，配置完这些我理解为什么 <code>Typora</code> 要收费了，因为这些看似不起眼的地方为了能让用户傻瓜式的使用，都是需要花时间调配的。</p>
 
               
             </article>
@@ -578,13 +624,13 @@ extra_javascript:
       
       
         
-        <a href="../25%20xcopy%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-footer__link md-footer__link--next" aria-label="下一页: 25th. xcopy指令的使用" rel="next">
+        <a href="../25%20xcopy%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-footer__link md-footer__link--next" aria-label="下一页: 2022-05-25 xcopy 指令的使用" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              25th. xcopy指令的使用
+              2022-05-25 xcopy 指令的使用
             </div>
           </div>
           <div class="md-footer__button md-icon">
