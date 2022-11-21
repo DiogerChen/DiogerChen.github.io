@@ -346,8 +346,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#20221115" class="md-nav__link">
-    2022.11.15 更新
+  <a href="#2022-11-15" class="md-nav__link">
+    2022-11-15 更新
   </a>
   
 </li>
@@ -408,6 +408,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11/22%20%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8C%2B%2B%20OpenGL%E5%A4%8D%E5%88%BB%E7%94%B5%E8%A7%86%E5%89%A7%E4%B8%AD%E7%9A%84%E7%88%B1%E5%BF%83/" class="md-nav__link">
+        2022-11-22 尝试使用C++ OpenGL复刻电视剧中的爱心
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -448,8 +462,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#20221115" class="md-nav__link">
-    2022.11.15 更新
+  <a href="#2022-11-15" class="md-nav__link">
+    2022-11-15 更新
   </a>
   
 </li>
@@ -484,7 +498,7 @@
 </code></pre></div>
 <p>这样写可以运行的原理比较简单，就像在前面加个 <code>if</code> 一样，判断语句会从左到右顺序执行，当变量为 <code>None</code> 或者 <code>False</code> 时，<code>and</code> 就不会继续执行下去，而是直接返回 <code>False</code>。</p>
 <p>所以当 <code>callback</code> 为 <code>None</code> 时，这行代码其实已经执行结束了，根本轮不到 <code>callback()</code> 然后抛 <code>TypeError: 'NoneType' object is not callable</code> 的异常了。</p>
-<h2 id="20221115">2022.11.15 更新</h2>
+<h2 id="2022-11-15">2022-11-15 更新</h2>
 <p><code>callback and callback()</code> 的写法看起来很酷，但遇到 <code>callback</code> 非 <code>None</code>，也并非是函数的情况时，就还是会出现运行的问题。</p>
 <p>实际上最上面提到的写法也不OK，最稳妥的写法就应该是 <code>callable(callback) and callback()</code>。</p>
 
